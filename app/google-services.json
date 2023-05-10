@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281933816511",
+    "project_id": "login-register-9678f",
+    "storage_bucket": "login-register-9678f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281933816511:android:cac5b62fe8f2a114331c0a",
+        "android_client_info": {
+          "package_name": "com.example.therealassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281933816511-hl6u2cvcjuqnv2eecgnhbbqu74nv01in.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3khowPcys-BtSfldUtgN7nmJvq3niLjU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281933816511-hl6u2cvcjuqnv2eecgnhbbqu74nv01in.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

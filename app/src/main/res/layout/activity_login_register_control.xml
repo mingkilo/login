@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginRegisterControl">
+
+    <ImageView
+        android:id="@+id/LogReg_drink"
+        android:layout_width="390dp"
+        android:layout_height="312dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_textChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/login_register_drink" />
+
+    <ImageView
+        android:id="@+id/LogReg_exercise"
+        android:layout_width="390dp"
+        android:layout_height="312dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_textChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/login_register_exercise" />
+
+    <ImageView
+        android:id="@+id/LogReg_sleep"
+        android:layout_width="390dp"
+        android:layout_height="312dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_textChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/login_register_sleep" />
+
+    <TextView
+        android:id="@+id/LogReg_textChange"
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Water is a must"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_drink" />
+
+    <TextView
+        android:id="@+id/LogReg_textChange2"
+        android:layout_width="352dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:text="Constantly monitoring one's own water intake is crucial for maintaining proper hydration and promoting optimal bodily functions."
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_textChange" />
+
+    <Button
+        android:id="@+id/LogReg_LoginButton"
+        android:layout_width="263dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:backgroundTint="@color/design_default_color_secondary_variant"
+        android:text="Login"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline20" />
+
+    <Button
+        android:id="@+id/LogReg_createButton"
+        android:layout_width="263dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="74dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Create Account"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_LoginButton" />
+
+    <View
+        android:id="@+id/LogReg_dot3"
+        android:layout_width="31dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_LoginButton"
+        app:layout_constraintStart_toEndOf="@+id/LogReg_dot2"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_textChange2" />
+
+    <View
+        android:id="@+id/LogReg_dot1"
+        android:layout_width="31dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_LoginButton"
+        app:layout_constraintEnd_toStartOf="@+id/LogReg_dot2"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_textChange2" />
+
+    <View
+        android:id="@+id/LogReg_dot2"
+        android:layout_width="31dp"
+        android:layout_height="9dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/LogReg_LoginButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline22"
+        app:layout_constraintStart_toStartOf="@+id/guideline22"
+        app:layout_constraintTop_toBottomOf="@+id/LogReg_textChange2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

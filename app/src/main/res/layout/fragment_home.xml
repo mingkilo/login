@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/design_default_color_primary"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.64" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/lavander_border"
+            android:backgroundTint="@color/light_blue"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline23"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="@+id/guideline24"
+            app:layout_constraintTop_toTopOf="@+id/guideline8"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.83" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.09" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.23" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.0" />
+
+            <View
+                android:id="@+id/home_water_borderbox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lavander_border"
+                android:backgroundTint="@color/app_theme_light"
+                app:layout_constraintBottom_toTopOf="@+id/guideline15"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/home_water_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_water_drop_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_borderbox"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toTopOf="@+id/home_water_borderbox" />
+
+            <TextView
+                android:id="@+id/home_water_volume_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ml"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_borderbox"
+                app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/home_water_borderbox" />
+
+            <TextView
+                android:id="@+id/home_water_target_volume_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3900"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_volume_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_water_volume_text"
+                app:layout_constraintTop_toTopOf="@+id/home_water_volume_text" />
+
+            <TextView
+                android:id="@+id/home_water_slash_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_volume_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_water_target_volume_text"
+                app:layout_constraintTop_toTopOf="@+id/home_water_volume_text" />
+
+            <TextView
+                android:id="@+id/home_water_complete_volume_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3900"
+                android:textColor="@color/middleBlue"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_volume_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_water_slash_text"
+                app:layout_constraintTop_toTopOf="@+id/home_water_volume_text" />
+
+            <View
+                android:id="@+id/home_exercise_borderbox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lavander_border"
+                android:backgroundTint="@color/app_theme_light"
+                app:layout_constraintBottom_toTopOf="@+id/guideline17"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+            <TextView
+                android:id="@+id/home_exercise_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_directions_run_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_borderbox"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_borderbox" />
+
+            <TextView
+                android:id="@+id/home_exercise_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" hours"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_borderbox"
+                app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_borderbox" />
+
+            <TextView
+                android:id="@+id/home_exercise_target_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_exercise_time_text"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_time_text" />
+
+            <TextView
+                android:id="@+id/home_exercise_slash_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_exercise_target_time_text"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_time_text" />
+
+            <TextView
+                android:id="@+id/home_exercise_complete_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_exercise_slash_text"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_time_text"
+                android:textColor="@color/middleBlue" />
+
+            <View
+                android:id="@+id/home_sleep_borderbox"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/lavander_border"
+                android:backgroundTint="@color/app_theme_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline18"
+                app:layout_constraintStart_toStartOf="@+id/guideline31"
+                app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+            <TextView
+                android:id="@+id/home_sleep_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_bedtime_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_borderbox"
+                app:layout_constraintStart_toStartOf="@+id/guideline21"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_borderbox" />
+
+            <TextView
+                android:id="@+id/home_sleep_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" hours"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_borderbox"
+                app:layout_constraintEnd_toStartOf="@+id/guideline34"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_borderbox" />
+
+            <TextView
+                android:id="@+id/home_sleep_target_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_sleep_time_text"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_time_text" />
+
+            <TextView
+                android:id="@+id/home_sleep_slash_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_sleep_target_time_text"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_time_text" />
+
+            <TextView
+                android:id="@+id/home_sleep_complete_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/middleBlue"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_time_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_sleep_slash_text"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_time_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavander_border"
+            android:backgroundTint="@color/light_blue"
+            app:layout_constraintBottom_toTopOf="@+id/guideline8"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline24"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <View
+                android:id="@+id/home_straight_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/guideline12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+            <TextView
+                android:id="@+id/home_perfect_for_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERFECT FOR"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline12"
+                app:layout_constraintStart_toStartOf="@+id/guideline10"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_days_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" days"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline11"
+                app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+            <TextView
+                android:id="@+id/home_number_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/home_days_text"
+                app:layout_constraintEnd_toStartOf="@+id/home_days_text"
+                app:layout_constraintTop_toTopOf="@+id/home_days_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/home_header_blue_banner_background"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.84" />
+
+            <ImageView
+                android:id="@+id/home_user_picture"
+                android:layout_width="79dp"
+                android:layout_height="85dp"
+                android:background="@drawable/account_circle_black_border"
+                android:hapticFeedbackEnabled="false"
+                android:src="@drawable/fruit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline7"
+                app:layout_constraintHorizontal_bias="0.721"
+                app:layout_constraintStart_toStartOf="@+id/guideline7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello "
+                android:textAlignment="viewEnd"
+                android:textColor="@color/app_theme_light"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toTopOf="@+id/home_greeting"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/home_user_picture"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/home_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User,"
+                android:textColor="@color/app_theme_light"
+                android:textSize="25dp"
+                app:layout_constraintBottom_toBottomOf="@+id/home_hello"
+                app:layout_constraintStart_toEndOf="@+id/home_hello"
+                app:layout_constraintTop_toTopOf="@+id/home_hello" />
+
+            <TextView
+                android:id="@+id/home_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="56dp"
+                android:text="How are you today?"
+                android:textColor="@color/app_theme_light"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/home_user_picture"
+                app:layout_constraintEnd_toStartOf="@+id/home_user_picture"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@+id/guideline4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/lavander_border"
+            android:backgroundTint="@color/light_blue"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintStart_toStartOf="@+id/guideline23"
+            app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.92" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34" />
+
+            <Switch
+                android:id="@+id/home_water_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Off"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline27"
+                app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/home_exercise_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Off"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/guideline28"
+                app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+            <Switch
+                android:id="@+id/home_sleep_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="Off"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline30"
+                app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+            <TextView
+                android:id="@+id/home_water_alarm_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_alarm_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_water_notification"
+                app:layout_constraintStart_toStartOf="@+id/guideline29"
+                app:layout_constraintTop_toTopOf="@+id/home_water_notification" />
+
+            <TextView
+                android:id="@+id/home_exercise_alarm_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_alarm_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_exercise_notification"
+                app:layout_constraintStart_toStartOf="@+id/guideline29"
+                app:layout_constraintTop_toTopOf="@+id/home_exercise_notification" />
+
+            <TextView
+                android:id="@+id/home_sleep_alarm_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_alarm_24"
+                app:layout_constraintBottom_toBottomOf="@+id/home_sleep_notification"
+                app:layout_constraintStart_toStartOf="@+id/guideline29"
+                app:layout_constraintTop_toTopOf="@+id/home_sleep_notification" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

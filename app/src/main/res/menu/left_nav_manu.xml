@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/left_nav_profile"
+            android:icon="@drawable/baseline_account_circle_24"
+            android:title="PROFILE"/>
+        <item
+            android:id="@+id/left_nav_reward"
+            android:icon="@drawable/baseline_card_giftcard_24"
+            android:title="REWARD"/>
+        <item
+            android:id="@+id/left_nav_setting"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="SETTING"/>
+        <item
+            android:id="@+id/left_nav_about"
+            android:icon="@drawable/baseline_info_24"
+            android:title="ABOUT US"/>
+
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/left_nav_logout"
+                android:icon="@drawable/baseline_logout_24"
+                android:title="LOG OUT"/>
+        </menu>
+
+
+    </item>
+</menu>

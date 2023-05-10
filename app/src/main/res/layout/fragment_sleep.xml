@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <TextView
+        android:id="@+id/sleep_checkInBackground"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/light_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sleep_checkInBox2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox1" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox2" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox3" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox5"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox4" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox6"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox5" />
+
+    <TextView
+        android:id="@+id/sleep_checkInBox7"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/water_checkin_background"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sleep_checkInBox6" />
+
+    <TextView
+        android:id="@+id/sleep_day1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toStartOf="@+id/sleep_checkInBackground"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/sleep_day2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 2"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day1"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sleep_day3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day2"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sleep_day4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day3"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sleep_day5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 5"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day4"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sleep_day6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 6"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day5"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sleep_day7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Day 7"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_checkInBackground"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_checkInBackground"
+        app:layout_constraintStart_toEndOf="@+id/sleep_day6"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBox1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/sleep_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/water_circlebar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_checkInBackground" />
+
+    <ImageView
+        android:id="@+id/sleep_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-150dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/sleep_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/sleep_progressBar"
+        app:srcCompat="@drawable/sleep"
+        app:tint="@color/darkBlue" />
+
+    <TextView
+        android:id="@+id/sleep_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:text="0"
+        android:textColor="@color/middleBlue"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toStartOf="@+id/sleep_symbol"
+        app:layout_constraintStart_toStartOf="@+id/sleep_progressBar"
+        app:layout_constraintTop_toTopOf="@+id/sleep_progressBar" />
+
+    <TextView
+        android:id="@+id/sleep_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text=" / "
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toStartOf="@+id/sleep_totaltime"
+        app:layout_constraintTop_toTopOf="@+id/sleep_progressBar" />
+
+    <TextView
+        android:id="@+id/sleep_totaltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:text="8"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sleep_progressBar" />
+
+    <TextView
+        android:id="@+id/sleep_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="70dp"
+        android:text="H"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_progressBar"
+        app:layout_constraintStart_toEndOf="@+id/sleep_totaltime"
+        app:layout_constraintTop_toTopOf="@+id/sleep_progressBar" />
+
+    <TextView
+        android:id="@+id/sleep_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:text="Daily Sleep Target"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_totaltime" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/water_circlebutton"
+        app:layout_constraintBottom_toBottomOf="@+id/sleep_progressBar"
+        app:layout_constraintEnd_toEndOf="@+id/sleep_progressBar"
+        app:layout_constraintStart_toStartOf="@+id/sleep_progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/sleep_title"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/sleep_strButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/sleep_imageview"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_local_drink_24"
+            app:srcCompat="@drawable/moon"
+            app:tint="#03A9F4" />
+
+        <TextView
+            android:id="@+id/water_waterAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="sleep"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

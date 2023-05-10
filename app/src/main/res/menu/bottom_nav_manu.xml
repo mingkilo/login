@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="HOME"
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"/>
+    <item android:title="WATER"
+        android:id="@+id/water"
+        android:icon="@drawable/baseline_water_drop_24"/>
+    <item android:title="EXERCISE"
+        android:id="@+id/exercise"
+        android:icon="@drawable/baseline_directions_run_24"/>
+    <item android:title="SLEEP"
+        android:id="@+id/sleep"
+        android:icon="@drawable/baseline_bedtime_24"/>
+    <item android:title="CHART"
+        android:id="@+id/chart"
+        android:icon="@drawable/baseline_bar_chart_24"/>
+</menu>
